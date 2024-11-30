@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "mockWebApps": {
+      "value": [
+        {
+          "name": "openaimock1",
+          "endpoint": "https://openaimock1.azurewebsites.net"
+        },
+        {
+          "name": "openaimock2",
+          "endpoint": "https://openaimock2.azurewebsites.net"
+        }
+      ]
+    },
+    "mockBackendPoolName": {
+      "value": "mock-backend-pool"
+    },
+    "openAIBackendPoolName": {
+      "value": "openai-backend-pool"
+    },
+    "openAIConfig": {
+      "value": [
+        {
+          "name": "openai1",
+          "location": "francecentral"
+        },
+        {
+          "name": "openai2",
+          "location": "japaneast"
+        }
+      ]
+    },
+    "openAILoadBalancingConfigValue": {
+      "value": "[{'name': 'openai1', 'priority': 1, 'weight': 100}, {'name': 'openai2', 'priority': 2, 'weight': 300}]"
+    },
+    "openAIDeploymentName": {
+      "value": "gpt-4o"
+    },
+    "openAISku": {
+      "value": "S0"
+    },
+    "openAIModelName": {
+      "value": "gpt-4o"
+    },
+    "openAIModelVersion": {
+      "value": "2024-05-13"
+    },
+    "openAIAPISpecURL": {
+      "value": "https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/specification/cognitiveservices/data-plane/AzureOpenAI/inference/stable/2024-10-21/inference.json"
+    },
+    "apimResourceName": {
+      "value": "apim31234"
+    },
+    "apimResourceLocation": {
+      "value": "westus"
+    },
+    "apimSku": {
+      "value": "Standardv2"
+    }
+  }
+}
