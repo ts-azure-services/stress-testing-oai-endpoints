@@ -2,7 +2,7 @@ This repo contains a number of workflows and scripts to stress test Azure OpenAI
 instance. Most of the workflow and steps are captured in the `Makefile` and should be followed sequentially. This leverages
 `locust` as a testing framework to simulate concurrent users, but also leverages batch approaches to hit the endpoints with load.
 All this was tested on a Mac, though would work equally on any Unix-based machine. This also relies on several command-line tools like
-`parallel` and `jq`. For reference, these tools are also available in the Azure Cloud shell by default, providing an easy
+`parallel`, `jq` and `grep`. For reference, these tools are also available in the Azure Cloud shell by default, providing an easy
 deployment option.
 
 ### Random Notes
