@@ -25,7 +25,7 @@ class MyUser(HttpUser):
             ],
             "max_tokens": 300
         }
-        self.client.post(f"openai/deployments/gpt-4o/chat/completions/?api-version={os.environ['API_VERSION']}", 
+        self.client.post(f"openai/deployments/gpt-4o-mini/chat/completions/?api-version={os.environ['API_VERSION']}", 
                          headers=headers,
                          data=json.dumps(payload)
                          )

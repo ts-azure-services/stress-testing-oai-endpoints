@@ -36,13 +36,13 @@
       "value": "[{'name': 'openai1', 'priority': 1, 'weight': 100}, {'name': 'openai2', 'priority': 2, 'weight': 300}]"
     },
     "openAIDeploymentName": {
-      "value": "gpt-4o"
+      "value": "gpt-4o-mini"
     },
     "openAISku": {
       "value": "S0"
     },
     "openAIModelName": {
-      "value": "gpt-4o"
+      "value": "gpt-4o-mini"
     },
     "openAIModelVersion": {
       "value": "2024-05-13"

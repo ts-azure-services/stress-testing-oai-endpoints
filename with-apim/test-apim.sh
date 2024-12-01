@@ -12,7 +12,7 @@ else
     exit 1
 fi
 
-model="gpt-4o"
+model="gpt-4o-mini"
 URL="${APIM_ENDPOINT}/openai/deployments/${model}/chat/completions?api-version=${API_VERSION}"
 
 # input="Should pineapples be on pizza?"

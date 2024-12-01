@@ -11,7 +11,7 @@ else
 fi
 
 # URL=($API_ENDPOINT?api-version=$API_VERSION)
-model="gpt-4o"
+model="gpt-4o-mini"
 URL="${API_ENDPOINT}openai/deployments/${model}/chat/completions?api-version=${API_VERSION}"
 input=$1
 random_number=$RANDOM
@@ -20,7 +20,7 @@ error_file="./multi-input/results/error$random_number.log"
 
 # Define the request payload
 PAYLOAD=$(jq -n --arg input "$input" '{
-  model: "gpt-4o",
+  model: "gpt-4o-mini",
     messages: [{"role": "user", "content": $input}]
     }')
 

@@ -6,7 +6,7 @@ All this was tested on a Mac, though would work equally on any Unix-based machin
 deployment option.
 
 ### Random Notes
-- For the Azure OpenAI endpoints, this has leveraged the Global Standard deployment for gpt-4o. This can be customized as needed.
+- For the Azure OpenAI endpoints, this has leveraged the Global Standard deployment for gpt-4o-mini. This can be customized as needed.
 - This does not include setup of Application Insights or Log Analytics as part of the workflow.
 - For most of the "batch" workflows, there is no logic to implement a backoff period. Limits should be understood considering the
   capacity of the endpoint and/or the logic in place (e.g. with APIM) to handle throttling.
