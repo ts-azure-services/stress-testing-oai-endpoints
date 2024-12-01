@@ -45,7 +45,7 @@
       "value": "gpt-4o-mini"
     },
     "openAIModelVersion": {
-      "value": "2024-05-13"
+      "value": "2024-07-18"
     },
     "openAIAPISpecURL": {
       "value": "https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/specification/cognitiveservices/data-plane/AzureOpenAI/inference/stable/2024-10-21/inference.json"
