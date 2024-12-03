@@ -16,7 +16,7 @@ apimKey=$(echo "$keys" | cut -f1)
 
 
 # Get the OAI endpoint variables
-oai=$(az cognitiveservices account list -g apim-sampler-234 --query "[?kind=='OpenAI'][].name" -o tsv | sort)
+oai=$(az cognitiveservices account list -g $resourceGroup --query "[?kind=='OpenAI'][].name" -o tsv | sort)
 
 # Split the output into an array using newline as the delimiter
 IFS=$'\n' read -r -d '' -a names <<< "$oai"
